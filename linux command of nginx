@@ -1,0 +1,11 @@
+file of nginx configration
+cd /etc/nginx/conf.d   'in which all the onfigration of website code save before used this put '#' on nginx.conf file'
+cd /etc/nginx/nginx.conf 'used to tell the location of nginx conf file and code path to nginx 'gzi on' disable the eginx site-enable using '#' '
+cd /var/www/ 'all code save here in dir'
+  
+sudo systemctl reload nginx    'its used when u chnage the configration file'
+sudo systemctl stop nginx       'it used stop nginx'
+sudo systemctl start nginx    'it used start nginx'
+sudo systemctl status nginx  'it used check the status like nginx in active failed stop '
+nginx -t 'used always before reload the nginx to check conf code is oky or not'
+nginx -T 'to check where is error  in conf file just like nginx -t command'
