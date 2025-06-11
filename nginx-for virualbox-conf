@@ -1,0 +1,17 @@
+create vm 
+enable network
+{Shut down your Ubuntu VM (don't just save the state, power it off).
+Open VirtualBox Manager.
+Select your Ubuntu VM and click on "Settings."
+Go to "Network."
+For "Adapter 1," ensure "Enable Network Adapter" is checked.
+From the "Attached to" dropdown, select "Bridged Adapter."
+Make sure the "Name" dropdown below it shows your actual physical network adapter (e.g., your Wi-Fi adapter or Ethernet adapter).
+Click "OK."}
+ip a{get ip form enp0s3, eth0}
+install nginx
+used this
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx HTTPS' # If you plan to use SSL later
+sudo ufw status # To verify the rules
+put ip on web
