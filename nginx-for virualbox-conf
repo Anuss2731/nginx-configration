@@ -15,3 +15,8 @@ sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 'Nginx HTTPS' # If you plan to use SSL later
 sudo ufw status # To verify the rules
 put ip on web
+
+
+for ssh connection with putty install ssh
+sudo apt update
+sudo apt install openssh-server
